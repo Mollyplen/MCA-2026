@@ -1,4 +1,6 @@
 
-# \[Enter your portfolio title here\]
+# Music Curation and Analytics 26/27 Portfolio 
+
 <!-- Version 1.0 -->
-\[Enter your responses to Week 1, tasks 2 and 3 here\]
+## Week 1 
+
