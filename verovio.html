@@ -25,8 +25,12 @@
 </head>
 <body>
     <div class="box">
-    <div class="header"><h1>Week 3</h1>
-        <p>[Insert your response to task 2 here.]</p>
+    <div class="header">
+        <h1>Week 3</h1>
+        <h3>Key Signatures</h3>
+        <p>In musicXML, the key signature is represnted using a <key> parent element with <fifths> nested inside it. The value -1 stands for one flat. In comparison, MEI represents the same key signature in a single <keySig> element, using the attribute sig="1f" to show one flat. The MEI elememt also contains a unique identifier which the MusicXML element does not have. This shows that although both encode the same musical information, MusicXML uses a nested child element while MEIstores the information more compactly as attributes.</p>
+        <br><h3>Time Signatures</h3>
+        <p>In MusicXML, the time signature is shown using a <time> element, with <beats> and <beat-type> nested within, both with a value of 4 to represent 4/4. In MEI, the same information was presented, again in one element, <metersig>, using count="4" and unit="4". The MEI also again contained a unique identifier. As someone who doesn't play or read sheet music, I found this element quite easy to identify in both files, as the two seperate values of 4 made it clear that they were representing the 4/4 time signature. </p> 
     </div>
     <div id="app">Verovio is loading...</div>
     <script type="module">
