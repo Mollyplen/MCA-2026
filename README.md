@@ -27,12 +27,12 @@ This week I exported my Yesterday transcription into both MusicXML and MEI and u
 
 ## Week 4
 
-**Piano Roll**
+**Piano Roll**<br>
 The piano roll shows the pitches used across the first ten measures of *Yesterday* and their duration. 
 
 ![Piano Roll of Yesterday](pianoRoll)
 
-**Pitch Histogram**
+**Pitch Histogram**<br>
 The Pitch Histogram shows how frequently different pitches appear within my transcription of *Yesterday*
 
 ![Pitch Histogram of Yesterday](pitchHistogram)
