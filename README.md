@@ -22,7 +22,22 @@ Some of the additional notation and symbols, such as rests, ties and beamed note
 
 This week I exported my Yesterday transcription into both MusicXML and MEI and used Verovio to render the MEI file as music notation. I compared three elements from the MusicXML and MEI files: the key signature, time signature and notes. 
 
-[View my Week 3 Verovio page and MusicXML/MEI comparison](verovio.html) 
+[View my Week 3 Verovio page and MusicXML/MEI comparison](verovio.html)  
+
+
+## Week 4
+
+This 
+
+
+## Week 5
+
+For my metadata schema, I chose to include title, artist/performer, composer/songwriter, publisher, original release data and album/source. I chose these elements because I think they provide the most useful information for identifying and comparing the different songs and versions within my dataset. I thought it was important to separate the songwriter from the performer, as this makes it clear who originally created the song and who is performing the particular version in the dataset. 
+
+For *Yesterday*, I selected the Beatles as the performer, John Lennon and Paul McCartney as the composers/songwriters, Northern Songs Ltd as the publisher, 1965 as the original release year, and *Help!* as the album. I found that simple information such as publisher can become more complicated, as publishing rights can change over time. I therefore chose to use the publisher associated with the original release rather that the current rights holder. 
+
+I also enriched the metadata for John Lennon, Paul McCartney and The Beatles by linking each name to its VIAF authority record using auth and auth.uri. Adding these links made me think about how I could keep the metadata consistent if i added more reinterpretations to the dataset. For example, an artist might be credited slightly differently across sources, so linking them to the same authority record gives me a consistent way of identifying them across each version. 
+
 
 
 
