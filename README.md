@@ -9,7 +9,6 @@ The theme of my dataset is reinterpretations of popular music, looking at how th
 I think this theme will work well for the dataset because it gives me access to all three types of music data explored in the course. Notated data could be used to compare musical features between arrangements, acoustic data could be used to compare different recordings, and descriptive data could identify information such as the songwriter, performer, arranger, release date and particular version. This would allow me to look at what can actually be identified and compared between different interpretations of the same song using music data.  
 
 
-
 ## Week 2
 
 For this task, I chose *Yesterday* by The Beatles because it is the most covered song in popular music history, which made it a good starting point for my dataset to explore how the same song can exist in many different forms. The song has been recorded thousands of times, by huge artists including Marvin Gaye, Frank Sinatra, and Bob Dylan. I transcribed an easy piano arrangement of the song by Hans-Günter Heumann manually into MuseScore. 
@@ -18,6 +17,12 @@ As someone with very little experience of reading sheet music, i initially found
 
 Some of the additional notation and symbols, such as rests, ties and beamed notes, were a little more difficult to recreate at first, as I had to work out how they were presented and entered within MuseScore. Once I used them a few times the process became much easier. I regularly replayed what I had transcribed to make sure it sounded right, while also comparing it visually with the original arrangement to check that I had recreated it as accurately as possible. 
 
+
+## Week 3
+
+This week I exported my Yesterday transcription into both MusicXML and MEI and used Verovio to render the MEI file as music notation. I compared three elements from the MusicXML and MEI files: the key signature, time signature and notes. 
+
+[View my Week 3 Verovio page and MusicXML/MEI comparison](verovio.html) 
 
 
 
