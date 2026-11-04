@@ -15,6 +15,9 @@
          <pubStmt xml:id="pv8blkj">
             <publisher>Northern Songs Ltd</publisher>
             <date isodate="2026-10-07" type="encoding-date">2026-10-07</date>
+            <availability>
+               <useRestrict> </useRestrict>
+            </availability>
          </pubStmt>
          <notesStmt>
             <annot type="genre">Pop Rock</annot>
