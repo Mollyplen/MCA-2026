@@ -13,199 +13,65 @@ body {
 .homepage {
   position: relative;
   width: 100%;
-  min-height:100vh; /* make as tall as screen */
-  aspect-ratio: 1536 / 874; /* propprtions same as Canva design */
-  background: url(assets/graph.png) center / 100% 100% no-repeat; 
-  overflow: hidden; 
+  min-height: 100vh;
+  aspect-ratio: 1536 / 874;
+  background: url("assets/graph.png") center / 100% 100% no-repeat;
+  overflow: hidden;
 } 
 
-.sticker { /* Apply to all stickers */
-  position: absolute; /* I choose where sticker goes */
-  object-fit: contain; /* Doesnt crop */
-  transition: filer .12s; /* shadow appear when i hover */
-}
-
-.data {
-  left: 11%;
-  top: 13%;
-  width: 8%;
-}
-
-.stars {
-  left: 27%;
-  top: 20%;
-  width: 8%;
-}
-
-.guitar {
-  left: 38%;
-  top: 11%;
-  width: 9%;
-}
-
-.lauryn {
-  left: 54%;
-  top: 16%;
-  width: 11%;
-}
-
-.muse {
-  left: 71%;
-  top: 12%;
-  width: 12%;
-}
-
-.beatles {
-  left: 9%;
-  top: 36%;
-  width: 18%;
-}
-
-.cd {
-  left: 33%;
-  top: 37%;
-  width: 7%;
-}
-
-.franki {
-  left: 46%;
-  top: 34%;
-  width: 10%;
-}
-
-.computer {
-  left: 64%;
-  top: 33%;
-  width: 12%;
-}
-
-.wave {
-  left: 78%;
-  top: 31%;
-  width: 13%;
-}
+.sticker { position: absolute; object-fit: contain; transition: filter .12s; }
+.data { left: 11%; top: 13%; width: 8%; }
+.stars { left: 27%; top: 20%; width: 8%; }
+.guitar { left: 38%; top: 11%; width: 9%; }
+.lauryn { left: 54%; top: 16%; width: 11%; }
+.muse { left: 71%; top: 12%; width: 12%; }
+.beatles { left: 9%; top: 36%; width: 18%; }
+.cd { left: 33%; top: 37%; width: 7%; }
+.dancer { left: 46%; top: 34%; width: 10%; }
+.computer { left: 64%; top: 33%; width: 12%; }
+.wave { left: 78%; top: 31%; width: 13%; }
 
 /* Sticket Animations */
 
 @keyframes shake {
-
-  0%, 100% {
-    transfrom: translateY(-3px) (rotate(-3deg); /* move up and tilts left */
-  }
-
-  25% {
-    transfrom: translate(2px, -6px) (rotate(2deg); /* move slightly right and up */
-  }
-
-  50% {
-    transfrom: translateY(-2px, -3px) (rotate(-2deg); /* moves left and tilts back */
-  }
-
-  75% {
-    transfrom: translateY(2px, -5px) (rotate(3deg); /* moves right and tilts */
-  }
-} /* end shake */
-
-
-@keyframes spin {
-
-  to {
-    transfrom: rotate(360deg); /* cd spin */
-  }
-} /* end spin */
-
-
-@media (hover: hover) { 
-
-  .sticker:hover {
-    filter: drop-shadow(5px 5px 0 #333); /* black shadow */
-    animation: shake .4s steps(2) infinite; /* blocky shake effect */
-  }
-
-  .cd:hover{
-    animation: spin 1.4s steps(12) infinite; /* cd spin only */
-  }
-} /* end media */
-
-
-.intro {
-  position: absolute;
-  top: 57%;
-  left: 7.2%;
-  font-family: 'Courier New', monospace;
-  font-size: clamp(9px, 1.12vw, 18px);
-  line-height: 1.7;
-  letter-spacing: .03em;
+  0%, 100% { transform: translateY(-3px) rotate(-3deg); } /* move up and tilts left */
+  25% { transform: translate(2px, -6px) rotate(2deg); } /* move slightly right and up */
+  50% { transform: translate(-2px, -3px) rotate(-2deg); } /* moves left and tilts back */
+  75% { transform: translate(2px, -5px) rotate(3deg); }/* moves right and tilts */
 }
 
-.intro p {
-  margin: 0 0 7px;
+
+@keyframes spin { to { transform: rotate(360deg); } } /* end spin */
+
+@media (hover: hover) {
+  .sticker:hover { filter: drop-shadow(5px 5px 0 #333); animation: shake .4s steps(2) infinite; } /* black shadow and shake */
+  .cd:hover { animation: spin 1.4s steps(12) infinite; } /* cd spin only */
 }
 
-.intro .student {
-  margin-top: 10px;
+
+.intro { position: absolute; top: 57%; left: 7.2%; font-family: 'Courier New', monospace; font-size: clamp(9px, 1.12vw, 18px); line-height: 1.7; letter-spacing: .03em; }
+.intro p { margin: 0 0 7px; }
+.intro .student { margin-top: 10px; }
+.heading { position: absolute; top: 64%; right: 7%; text-align: right; }
+.heading p { font-size: clamp(18px, 2.5vw, 40px); margin: 0; letter-spacing: -.06em; font-weight: 300; }
+.heading h1 { font-size: clamp(22px, 3.6vw, 57px); font-style: italic; letter-spacing: -.07em; margin: 0; white-space: nowrap; }
+
+.weeks { position: absolute; bottom: 9%; width: 100%; display: flex; justify-content: center; gap: 1.3%; flex-wrap: wrap; padding: 0 12px; }
+.weeks a { color: #111; background: white; border: 1.5px solid #111; border-radius: 22px; padding: 8px 12px; font-size: clamp(12px, 1.25vw, 20px); text-decoration: none; transition: transform .12s, box-shadow .12s; }
+.weeks a:hover, .weeks a:focus-visible { transform: translateY(-3px); box-shadow: 3px 4px 0 #222; }
+
+@media (max-width: 750px) {
+  .homepage { min-height: 800px; aspect-ratio: auto; background-size: auto 100%; }
+  .sticker { transform: scale(1.1); }
+  .intro { top: 51%; left: 6%; right: 6%; font-size: 12px; }
+  .heading { top: 66%; left: 6%; right: 6%; text-align: left; }
+  .heading h1 { white-space: normal; font-size: 31px; }
+  .heading p { font-size: 23px; }
+  .weeks { bottom: 4%; gap: 8px; }
+  .weeks a { font-size: 14px; padding: 7px 11px; }
 }
-
-.heading {
-  position: absolute;
-  top: 64%;
-  right: 7%; 
-  text-align: right;
-}
-
-.heading p {
-  font-size: clamp(18px, 2.5vw, 40px); /* resize with screen */
-  margin: 0;
-  letter-spacing: -.06em;
-  font-weight: 300; 
-}
-
-.heading h1 { 
-  font-size: clamp(22px, 3.6vw, 57px);
-  font-style: italic;
-  letter-spacing: -.07em;
-  margin: 0;
-  white-space: nowrap;
-}
-
-.weeks {
-  position: absolute;
-  bottom: 9%;
-  width: 100%;
-  display: flex; /* row */
-  justify-content: center;
-  gap: 1.3%;
-  flex-wrap: wrap; /* new line if needed */
-  padding: 0 12px;
-}
-
-.weeks a {
-  color: #111;
-  background: white;
-  border: 1.5px solid #111;
-  border-radius: 22px;
-  padding: 8px 12px;
-  font-size: clamp(12px, 1.25vw, 20px);
-  text-decoration: none; /* remove underline */
-  transition: transform .12s, box-shadow .12s; /* smooth */
-}
-
-.weeks a:hover,
-.weeks a:focus-visible{
-  transform: translateY(-3px); /* move up slightly */
-  box-shadow:3px 4px 0 #222; /* shadow */
-}
-
-/* test */
-
-body {
-  background-color: pink;
-}
-
-.weeks a {
-  background: pink;
-  color: black;
-  font-size: 25px;
+@media (prefers-reduced-motion: reduce) {
+  .sticker, .weeks a { animation: none !important; transition: none; }
 }
 
   
