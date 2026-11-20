@@ -10,6 +10,15 @@ body {
   background: #f6f4f1;
 }
 
+/* Weekly background settings */
+
+body:has(.paper) {
+  background-image: url("assets/graph.png");
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+}
+
 .homepage {
   position: relative;
   width: 100%;
@@ -31,7 +40,7 @@ body {
 .computer { left: 64%; top: 33%; width: 12%; }
 .wave { left: 78%; top: 31%; width: 13%; }
 
-/* Sticket Animations */
+/* Sticker Animations */
 
 @keyframes shake {
   0%, 100% { transform: translateY(-3px) rotate(-3deg); } /* move up and tilts left */
