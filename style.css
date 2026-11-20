@@ -128,7 +128,7 @@ body {
 } /* end media */
 
 
-.into {
+.intro {
   position: absolute;
   top: 57%;
   left: 7.2%;
@@ -138,7 +138,7 @@ body {
   letter-spacing: .03em;
 }
 
-.into p {
+.intro p {
   margin: 0 0 7px;
 }
 
